@@ -1,0 +1,17 @@
+import js from "@eslint/js";
+import globals from "globals";
+import eslintConfigPrettier from "eslint-config-prettier";
+
+export default [
+  { ignores: ["dist/"] },
+  js.configs.recommended,
+  {
+    files: ["**/*.js"],
+    languageOptions: { globals: globals.browser },
+  },
+  {
+    files: ["vite.config.js", "eslint.config.js"],
+    languageOptions: { globals: globals.node },
+  },
+  eslintConfigPrettier,
+];
