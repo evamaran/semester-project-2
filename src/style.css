@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --color-background: #f2f3f1;
+  --color-surface: #ffffff;
+  --color-subtle: #d9ddda;
+  --color-divider: #aeb8b5;
+  --color-text: #292f30;
+  --color-text-muted: #66716e;
+  --color-border: #66716e;
+  --color-primary: #405b57;
+  --color-on-primary: #ffffff;
+  --color-success: #286044;
+  --color-error: #a13e3e;
+
+  --font-heading: "Fraunces", serif;
+  --font-body: "Manrope", sans-serif;
+}
